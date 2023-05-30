@@ -8,6 +8,14 @@ class App extends Component {
       reservations:[]
     }
   }
+
+  componentDidMount() {
+  }
+
+  addReservation = (newRes) => {
+ this.setState({ reservations: [...this.state.reservations,newRes]})
+  }
+
   render() {
     return (
       <div className="App">
