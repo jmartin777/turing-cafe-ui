@@ -1,0 +1,14 @@
+form {
+    margin: auto;
+}
+ 
+input, button{
+    margin: 3px;
+    width: 20%;
+    border: 2px solid white;
+    font-size: 18px;
+}
+
+.submitButton{
+    background-color: teal;
+}

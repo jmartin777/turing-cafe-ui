@@ -65,6 +65,7 @@ constructor(){
                 onChange={event => this.handleChange(event)}
                 />
             
+                <button className="submitButton" onClick={this.submitRes}>Submit</button>
             </form>
         )
     }
