@@ -1,18 +1,19 @@
 import React from "react";
 import './Reservations.css'
+import ResCard from "../resCard/resCard";
 
-function Reservations ({reservations}){
+function Reservations ({reservations, deleteRes}){
     const reservationCards = reservations.map(reservation =>{
         return (
-            <resCard
+            <ResCard
             
             name={reservation.name}
             date={reservation.date}
             time={reservation.time}
             numGuests={reservation.numGuests}
             id={reservation.id}
-            key={reservation._id}
-            // deleteRes = {deleteRes}
+            key={reservation.id}
+            deleteRes = {deleteRes}
             />
         )
     })

@@ -1,7 +1,7 @@
 import React from "react";
 import './resCard.css';
 
-const resCard = ({name, date, time, numGuests, id, deleteRes }) => {
+const ResCard = ({name, date, time, numGuests, id, deleteRes }) => {
     return(
         <div className="resCard">
             <h3>{name}</h3>
@@ -13,4 +13,4 @@ const resCard = ({name, date, time, numGuests, id, deleteRes }) => {
     )
 }
 
-export default resCard;
+export default ResCard;
