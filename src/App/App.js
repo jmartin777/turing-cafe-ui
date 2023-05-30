@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Form from '../Form/Form';
 import './App.css';
 import Reservations from '../Reservations/Reservations';
+import getReservations from '../API/API';
 
 
 class App extends Component {
@@ -13,6 +14,11 @@ class App extends Component {
   }
 
   componentDidMount() {
+    getReservations()
+    .then(data => {
+      this.setState({reservations:[...data]})
+    })
+    .catch(() => this.setState({error:"Reservations API error"}))
   }
 
   addRes = (newRes) => {
