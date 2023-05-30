@@ -8,7 +8,7 @@ constructor(){
             name : '',
             date:'',
             time: '',
-            numGuests: 0
+            number: 0
         }
     }
 
@@ -17,7 +17,7 @@ constructor(){
     }
 
     clearInputs = () => {
-        this.setState({ name : '', date:'', time: '', numGuests: 0});
+        this.setState({ name : '', date:'', time: '', number: 0});
     }
 
     submitRes = event => {
@@ -58,10 +58,10 @@ constructor(){
                 />
 
                 <input
-                type="text"
-                name="numGuests"
+                type="number"
+                name="number"
                 placeholder="Number Of Guests"
-                value={this.state.numGuests}
+                value={this.state.number}
                 onChange={event => this.handleChange(event)}
                 />
             

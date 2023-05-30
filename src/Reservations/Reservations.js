@@ -10,7 +10,7 @@ function Reservations ({reservations, deleteRes}){
             name={reservation.name}
             date={reservation.date}
             time={reservation.time}
-            numGuests={reservation.numGuests}
+            number={"Number of Guests: " + reservation.number}
             id={reservation.id}
             key={reservation.id}
             deleteRes = {deleteRes}

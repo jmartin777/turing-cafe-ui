@@ -8,4 +8,16 @@ const getReservations = () => {
     })
 }
 
+export const postRes = (dataIn) => {
+    fetch('http://localhost:3001/api/v1/reservations', {
+        method: 'POST',
+        body: JSON.stringify(dataIn),
+        headers: {"Content-Type": "application/json"}
+    }).then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
+    .catch(error => console.error(error));
+};
+
 export default getReservations;
