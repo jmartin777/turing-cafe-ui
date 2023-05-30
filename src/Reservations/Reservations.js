@@ -12,7 +12,7 @@ function Reservations ({reservations}){
             numGuests={reservation.numGuests}
             id={reservation.id}
             key={reservation._id}
-            // delete = {deleteRes}
+            // deleteRes = {deleteRes}
             />
         )
     })
